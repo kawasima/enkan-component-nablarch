@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>net.unit8.enkan</groupId>
+        <artifactId>enkan-parent</artifactId>
+        <version>0.6.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>enkan-component-nablarch</artifactId>
+    <packaging>jar</packaging>
+
+    <name>enkan-component-nablarch</name>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.nablarch.profile</groupId>
+                <artifactId>nablarch-bom</artifactId>
+                <version>5u12</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.unit8.enkan</groupId>
+            <artifactId>enkan-system</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.unit8.enkan</groupId>
+            <artifactId>enkan-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.nablarch.framework</groupId>
+            <artifactId>nablarch-fw-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.unit8.enkan</groupId>
+            <artifactId>enkan-servlet</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.25</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.196</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
